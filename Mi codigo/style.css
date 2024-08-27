@@ -1,0 +1,827 @@
+/* Estilo del Body */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+}
+
+
+
+
+/* Estilo del PreNav */
+
+#prenav {
+    background-color: #FFC3D2;
+    display: flex; /* Usa Flexbox para alinear los divs en una fila */
+    align-items: center; /* Alinea los divs verticalmente en el centro */
+    height: 12vh; /* Opcional: Ajusta la altura del contenedor */
+}
+
+#prenav .material-symbols-outlined {
+    color: white;
+   }
+
+
+
+#prenav  #buscador {
+    margin-left: 10%; /* Espacio entre los divs*/
+}
+
+#prenav #logopagina {
+    margin-left: 35%; /* Espacio entre los divs*/
+}
+
+#prenav #micuenta {
+    margin-left: 28%; /* Espacio entre los divs*/
+}
+
+#prenav #carrito {
+    margin-left: 1%; /* Espacio entre los divs*/
+}
+
+
+
+/* Estilo del Nav */
+nav {
+    background-color: #FFF7F7;
+    padding: 10px 0;
+    position: relative;
+}
+
+nav ul {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    list-style: none;
+    padding: 5px;
+    margin: 0;
+}
+
+nav > ul > li {
+    position: relative;
+    margin: 0;
+}
+
+/*nav > ul > li:hover {
+    background-color: #FFC3D2; /* Color change on hover 
+} */
+
+nav > ul > li > a {
+    height: 100%;
+    color: #FFC3D2;
+    text-decoration: none;
+    padding: 10px 15px;
+    display: block;
+}
+
+nav > ul > li > a:hover {
+    color: #A97280;
+    text-decoration: underline;
+}
+
+.submenu {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    background-color:  #FFF7F7;
+    border: 1px solid #ddd;
+}
+
+.submenu li {
+    padding: 10px;
+}
+
+.submenu li a {
+    text-decoration: none;
+    color: #333;
+}
+
+.menu-item:hover .submenu {
+    display: block;
+    background-color: #FFF7F7; /* Optional: Change background color on hover */
+}
+
+.submenu li:hover {
+    background-color: #FFC3D2; /* Change background color on hover */
+}
+
+.submenu li a:hover {
+    color: #000; /* Optional: Change text color on hover */
+}
+
+
+
+
+/* Estilo Primer Contenedor (SECCION "INDEX") */
+
+#contenedor1 {
+    display: flex; /* Usa Flexbox para alinear los divs en una fila */
+    height: 480px;
+    justify-content: center;
+
+}
+
+
+/* Contenedor Imagen1 */
+
+.image-container {
+    background-color: pink;
+    margin-top: 2%;
+    overflow: hidden; /* Asegura que la imagen no desborde el contenedor durante el zoom */
+    width: 220px; /* Ajusta el ancho del contenedor */
+    height: 450px; /* Ajusta el alto del contenedor */
+}
+
+.image-container img {
+    width: 110%; /* Hace que la imagen se ajuste al ancho del contenedor */
+    height: 140%; /* Hace que la imagen se ajuste a la altura del contenedor */
+    object-fit: cover; /* Asegura que la imagen cubra todo el contenedor sin distorsión */
+    transition: transform 0.5s ease; /* Suaviza el efecto de zoom */
+}
+
+.image-container:hover img {
+    transform: scale(1.2); /* Aplica el efecto de zoom al pasar el mouse */
+}
+
+/* Contenedor Imagen2 */
+
+.image-container2 {
+    background-color: red;
+    margin-top: 2%;
+    overflow: hidden; /* Asegura que la imagen no desborde el contenedor durante el zoom */
+    width: 220px; /* Ajusta el ancho del contenedor */
+    height: 450px; /* Ajusta el alto del contenedor */
+}
+
+.image-container2 img {
+    width: 110%; /* Hace que la imagen se ajuste al ancho del contenedor */
+    height: 140%; /* Hace que la imagen se ajuste a la altura del contenedor */
+    object-fit: cover; /* Asegura que la imagen cubra todo el contenedor sin distorsión */
+    transition: transform 0.5s ease; /* Suaviza el efecto de zoom */
+}
+
+.image-container2:hover img {
+    transform: scale(1.2); /* Aplica el efecto de zoom al pasar el mouse */
+}
+
+/* Contenedor Imagen3 */
+
+.image-container3 {
+    background-color: blue;
+    margin-top: 2%;
+    overflow: hidden; /* Asegura que la imagen no desborde el contenedor durante el zoom */
+    width: 220px; /* Ajusta el ancho del contenedor */
+    height: 450px; /* Ajusta el alto del contenedor */
+}
+
+.image-container3 img {
+    width: 110%; /* Hace que la imagen se ajuste al ancho del contenedor */
+    height: 140%; /* Hace que la imagen se ajuste a la altura del contenedor */
+    object-fit: cover; /* Asegura que la imagen cubra todo el contenedor sin distorsión */
+    transition: transform 0.5s ease; /* Suaviza el efecto de zoom */
+}
+
+.image-container3:hover img {
+    transform: scale(1.2); /* Aplica el efecto de zoom al pasar el mouse */
+}
+
+/* Contenedor Imagen4 */
+
+.image-container4 {
+    background-color: yellow;
+    margin-top: 2%;
+    overflow: hidden; /* Asegura que la imagen no desborde el contenedor durante el zoom */
+    width: 220px; /* Ajusta el ancho del contenedor */
+    height: 450px; /* Ajusta el alto del contenedor */
+}
+
+.image-container4 img {
+    width: 110%; /* Hace que la imagen se ajuste al ancho del contenedor */
+    height: 140%; /* Hace que la imagen se ajuste a la altura del contenedor */
+    object-fit: cover; /* Asegura que la imagen cubra todo el contenedor sin distorsión */
+    transition: transform 0.5s ease; /* Suaviza el efecto de zoom */
+}
+
+.image-container4:hover img {
+    transform: scale(1.2); /* Aplica el efecto de zoom al pasar el mouse */
+}
+
+/* Contenedor Imagen5 */
+
+.image-container5 {
+    background-color: green;
+    margin-top: 2%;
+    overflow: hidden; /* Asegura que la imagen no desborde el contenedor durante el zoom */
+    width: 220px; /* Ajusta el ancho del contenedor */
+    height: 450px; /* Ajusta el alto del contenedor */
+    
+}
+
+.image-container5 img {
+    width: 110%; /* Hace que la imagen se ajuste al ancho del contenedor */
+    height: 140%; /* Hace que la imagen se ajuste a la altura del contenedor */
+    object-fit: cover; /* Asegura que la imagen cubra todo el contenedor sin distorsión */
+    transition: transform 0.5s ease; /* Suaviza el efecto de zoom */
+}
+
+.image-container5:hover img {
+    transform: scale(1.2); /* Aplica el efecto de zoom al pasar el mouse */
+}
+
+/* ESTILO CONTENEDOR 2 (SECCION "INDEX")*/
+
+#contenedor2{
+
+    display: flex; /* Usa Flexbox para alinear los divs en una fila */
+    height: 300px;
+    justify-content: center;
+    margin-top: 20px;
+
+}
+
+#contenedor2 #titulos{
+    margin-top: 2%;
+    margin-bottom: 2%;
+    width: 30%;
+    text-align: center;
+    opacity: 0; /*FADE IN DE ENTRADA*/
+    transition: opacity 1s ease-in-out; /*FADE IN DE ENTRADA*/
+
+}
+
+/*FADE IN DE ENTRADA- CONTENEDOR 2 (SECCION "INDEX")*/
+
+#contenedor2 #titulos.visible {
+    opacity: 1;
+}
+
+section:nth-child(odd) {
+    background-color: #f0f0f0;
+}
+
+section:nth-child(even) {
+    background-color: #e0e0e0;
+}
+
+/*TERMINA FADE IN DE ENTRADA*/
+
+
+#contenedor2 h3{
+    font-size: 50px;
+    font-weight:bold ;
+    font-family: 'Times New Roman', Times, serif;
+    color: #FFC3D2;
+
+}
+#contenedor2 h6{
+    font-size: 30px;
+    font-family: 'Times New Roman', Times, serif;
+    color: #FFC3D2;
+
+}
+
+#contenedor2 #textos{
+    margin-top: 3%;
+    margin-bottom: 3%;
+    margin-left: 10px;
+    width: 35%;
+    opacity: 0; /*FADE IN DE ENTRADA*/
+    transition: opacity 1s ease-in-out; /*FADE IN DE ENTRADA*/
+}
+
+/*FADE IN DE ENTRADA*/
+
+#contenedor2 #textos.visible {
+    opacity: 1;
+}
+
+section:nth-child(odd) {
+    background-color: #f0f0f0;
+}
+
+section:nth-child(even) {
+    background-color: #e0e0e0;
+}
+
+/*TERMINA FADE IN DE ENTRADA*/
+
+#contenedor2 #textos p{
+    font-size: 16px;
+    text-align: justify;
+    color: #A97280;
+}
+
+#contenedor2 #botonSabermas{
+    background-color: #FFC3D2;
+    color: white;
+    margin-left: 40%;
+    padding: 1,8%;
+    padding-left: 4%;
+    padding-right: 4%;
+}
+
+#contenedor2 #botonSabermas:hover{
+    background-color: #A97280;
+    color: #FFF7F7;
+}
+
+
+/*FADE IN TEXTO CONTENEDOR 2 (SECCION "INDEX")*/
+
+.pruebafadein {
+    background-color: red;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    opacity: 0;
+    transition: opacity 1s ease-in-out;
+}
+
+.pruebafadein.visible {
+    opacity: 1;
+}
+
+section:nth-child(odd) {
+    background-color: #f0f0f0;
+}
+
+section:nth-child(even) {
+    background-color: #e0e0e0;
+}
+
+
+/*CONTENEDOR 3 (SECCION "INDEX")*/
+
+#contenedor3 {
+    width: 75%;
+    height: 550px;
+   /* background-color: green; */
+    display: flex;
+    margin-left: 13%;
+}
+
+#contenedor3 #textos2 {
+    width: 50%;
+    opacity: 0; /*FADE IN DE ENTRADA*/
+    transition: opacity 1s ease-in-out; /*FADE IN DE ENTRADA*/
+}
+
+#contenedor3 h3{
+    font-size: 45px;
+    font-family: 'Times New Roman', Times, serif;
+    color: #FFC3D2;
+    text-align: center;
+}
+
+#contenedor3 p{
+    color: #A97280;
+    margin-top: 3%;
+    margin-bottom: 3%;
+    margin-left: 15%;
+    width: 70%;
+    text-align: justify;
+
+}
+
+#contenedor3 #botonContacto{
+    background-color: #FFC3D2;
+    color: white;
+    margin-left: 40%;
+    padding: 1,8%;
+    padding-left: 2%;
+    padding-right: 2%;
+}
+
+#contenedor3 #botonContacto:hover{
+    background-color: #A97280;
+    color: #FFF7F7;
+}
+
+/*FADE IN DE ENTRADA- CONTENEDOR 3*/
+
+#contenedor3 #textos2.visible {
+    opacity: 1;
+}
+
+section:nth-child(odd) {
+    background-color: #f0f0f0;
+}
+
+section:nth-child(even) {
+    background-color: #e0e0e0;
+}
+
+/*TERMINA FADE IN DE ENTRADA*/
+
+/*FADE IN TEXTO CONTENEDOR 3 (SECCION "INDEX")*/
+
+.pruebafadein {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    opacity: 0;
+    transition: opacity 0.1s ease-in-out;
+}
+
+.pruebafadein.visible {
+    opacity: 1;
+}
+
+section:nth-child(odd) {
+    background-color: #f0f0f0;
+}
+
+section:nth-child(even) {
+    background-color: #e0e0e0;
+}
+
+
+
+/*CARRUSEL CONTENEDOR 3 (SECCION "INDEX")*/
+
+.carousel {
+    position: relative;
+    width: 50%;
+    height: 500px; /* Ajusta según el tamaño deseado */
+    margin: auto;
+    overflow: hidden;
+}
+
+.carousel-images {
+    background-color: #FFF7F7;
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+
+.carousel-image {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Asegura que la imagen cubra el contenedor */
+    opacity: 0;
+    transition: opacity 1s ease-in-out;
+}
+
+.carousel-image.active {
+    opacity: 1;
+}
+
+button {
+    position: absolute;
+    top: 50%;
+    background-color: transparent; /* Fondo transparente */
+    color: white;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    font-size: 18px;
+    border-radius: 3px;
+}
+
+.prev {
+    left: 10px;
+}
+
+.next {
+    right: 10px;
+}
+
+
+
+/*ESTILO CONTENEDOR 4 (SECCION "INDEX")*/
+
+#contenedor4 {
+    background-color: white;
+    height: 980px;
+}
+
+
+#contenedor4 h3{
+    font-size: 38px;
+    font-family: 'Times New Roman', Times, serif;
+    color: #FFC3D2;
+    text-align: center;
+
+}
+
+#contenedor4 #cartas{
+    background-color: #FFF7F7;
+    display: flex;
+    height: 700px;
+    width: 100%;
+    gap: 30px; /* Espacio entre los elementos */
+    justify-content: center;
+}
+
+.card1 {
+    margin-top: 42px;
+    position: relative;
+    width: 300px; /* Ancho de la tarjeta */
+    height: 600px; /* Altura de la tarjeta */
+    border-radius: 8px;
+    overflow: hidden;
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Transiciones suaves para el agrandamiento y la sombra */
+}
+
+.card1:hover{
+    transform: scale(1.05); /* Agranda la tarjeta al pasar el mouse */
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3); /* Cambia la sombra para un efecto más pronunciado */
+}
+.card-description{
+    background-color: white;
+    height: 100%;
+    padding: 20px;
+}
+
+.card-description h2{
+    font-size: 36px;
+    font-family: 'Times New Roman', Times, serif;
+    color: #FFC3D2;
+   
+}
+
+
+.card-description p{
+    font-size: 16px;
+    text-align: justify;
+    color: #A97280;
+}
+
+.card-description #botonSabermas{
+    background-color: #FFC3D2;
+    color: white;
+    padding: 1,8%;
+    padding-left: 4%;
+    padding-right: 4%;
+    margin-left: 31%;
+}
+
+.card-description #botonSabermas:hover{
+    background-color: #A97280;
+    color: #FFF7F7;
+}
+
+
+#card1-image{
+    width: 100%;
+    height: 30%; /* Ajusta la altura según sea necesario */
+    object-fit: cover;  /* Asegura que la imagen cubra el área sin distorsión */
+}
+
+/*ESTILO CONTENEDOR 5 (SECCION "PROYECTOSJUEGOS")*/
+
+#contenedor5 h3{
+    font-size: 38px;
+    font-family: 'Times New Roman', Times, serif;
+    color: #FFC3D2;
+    text-align: center;
+}
+
+#contenedor5 #contenedor5texto{
+    background-color: #FFF7F7;
+}
+
+#contenedor5 #contenedor5texto p{
+    font-size: 16px;
+    text-align: justify;
+    color: #A97280;
+    width: 65%;
+    margin: auto;
+    padding: 35px;
+
+}
+
+#contenedor6 h3{
+    font-size: 38px;
+    font-family: 'Times New Roman', Times, serif;
+    color: #FFC3D2;
+    text-align: center;
+
+}
+/* Estilo reproductor de video*/
+
+.video-container {
+    position: relative;
+    width: 800px;
+    height: 450px;
+    margin: auto; /* Centra el contenedor si es necesario */
+    background: #FFF7F7;
+}
+
+.video-container iframe {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+
+}
+#contenedor6botones{
+    display: flex;
+}
+
+#contenedor6botones #botonDescarga1{
+    background-color: #FFC3D2;
+    color: white;
+    padding: 8px;
+    padding-left: 4%;
+    padding-right: 4%;
+    margin-left: 34%;
+}
+
+#contenedor6botones #botonDescarga1:hover{
+    background-color: #A97280;
+    color: #FFF7F7;
+}
+
+#contenedor6botones #botonDescarga2{
+    background-color: #FFC3D2;
+    color: white;
+    padding: 8px;
+    padding-left: 4%;
+    padding-right: 4%;
+    margin-left: 5%;
+}
+
+#contenedor6botones #botonDescarga2:hover{
+    background-color: #A97280;
+    color: #FFF7F7;
+}
+
+
+/*ESTILO CONTENEDOR 7 (SECCION "PROYECTOSCOMICS")*/
+
+#contenedor7{
+   /* background-color: red;*/
+    height: 500px;
+}
+
+#contenedor8{
+   /* background-color: yellow;*/
+    height: 500px;
+}
+
+#contenedor9{
+    /*background-color: blue;*/
+    height: 500px;
+}
+
+#contenedor7 h5, #contenedor8 h5, #contenedor9 h5{
+    font-size: 38px;
+    font-family: 'Times New Roman', Times, serif;
+    color: #FFC3D2;
+    text-align: center;
+
+}
+
+#contenedor7 #botonSabermas, #contenedor8 #botonSabermas, #contenedor9 #botonSabermas{
+    background-color: #FFC3D2;
+    color: white;
+    padding: 8px;
+    padding-left: 4%;
+    padding-right: 4%;
+    margin-left: 14%;
+}
+
+#contenedor7 #botonSabermas:hover, #contenedor8 #botonSabermas:hover, #contenedor9 #botonSabermas:hover{
+    background-color: #A97280;
+    color: #FFF7F7;
+}
+
+#contenedor7 #botonComprar, #contenedor8 #botonComprar, #contenedor9 #botonComprar{
+    background-color: #FFC3D2;
+    color: white;
+    padding: 8px;
+    padding-left: 4%;
+    padding-right: 4%;
+    margin-left: 14%;
+}
+
+#contenedor7 #botonComprar:hover, #contenedor8 #botonComprar:hover, #contenedor9 #botonComprar:hover{
+    background-color: #A97280;
+    color: #FFF7F7;
+}
+
+#contenedor7 p, #contenedor8 p, #contenedor9 p{
+    font-size: 16px;
+    text-align: justify;
+    color: #A97280;
+    width: 65%;
+    margin: auto;
+    padding: 35px;
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*ESTILO FOOTER*/
+
+footer {
+    background-color: #FFC3D2;
+    height: 400px;
+
+
+}
+
+footer #redes{
+  /*  background-color: green;*/
+    display: flex; /* Usa Flexbox para alinear los divs en una fila */
+    justify-content: space-between; 
+    width: 12%;
+    height: 100px;
+    margin-left: 43%;
+    padding-top: 25px;
+
+}
+
+/* footer #redes #instagram{
+
+    background-color: red;
+
+}
+
+footer #redes #twitter{
+
+    background-color: blue;
+
+}
+
+footer #redes #youtubee{
+
+    background-color: yellow;
+
+}
+
+footer #redes #behance{
+
+    background-color: red;
+
+} Lo activo para chequear los tamaños de los divs */
+
+
+
+footer{
+    height: 400px;
+}
+
+footer #contenido{
+   /* background-color: green;*/
+      display: flex; /* Usa Flexbox para alinear los divs en una fila */
+      color: white;
+      width: 55%;
+      gap: 22%;
+      margin-left: 30%;
+
+    
+  
+  }
+
+  footer #contenido ul{
+    list-style-type: none;
+  }
+  footer #contenido ul li{
+    padding-bottom: 15%;
+  }
+
+  
+
+  footer #contenido #columnaAyuda a{
+    color:white;
+    text-decoration: none;
+        
+  }
+
+  footer #contenido #columnaAyuda a:hover{
+   text-decoration: underline;
+        
+  }
+
+
+
+
