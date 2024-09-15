@@ -575,6 +575,90 @@ button {
     object-fit: cover;  /* Asegura que la imagen cubra el área sin distorsión */
 }
 
+/* ESTILOS PAGINA PRODUCTOS */
+
+/*ESTILO CARDS DE LA SECCION PRODUCTOS (JSON)*/
+
+#productosJSONH3 {
+margin: auto;
+width: 90px;
+}
+
+#productosContainer {
+display: flex;
+flex-wrap: wrap;
+gap: 2%;
+justify-content: center;
+margin: auto;
+max-width: 1200px;
+}
+
+.cartasProductos {
+border: 0.3px solid #ccc;
+border-radius: 8px;
+padding: 10px;
+width: 20%;  
+height: 40%;
+box-sizing: border-box;
+text-align: center;
+box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+margin-top: 25px;
+}
+
+.cartasProductos img {
+width: 100%;
+height: 55%;
+}
+
+.cartasProductos h3 {
+margin: 0 0;
+font-size: 75%;
+}
+
+.cartasProductos p {
+margin: 2% 0;
+color: #555;
+font-size: 50%;
+}
+
+.cartasProductos .precio {
+font-weight: bold;
+font-size: 110%;
+}
+
+.cartasProductos .stock {
+color: #2ecc71;
+font-size: 70%;
+} 
+
+
+@media (max-width: 645px) {
+.cartasProductos {
+height: 60%;
+}
+.cartasProductos img{
+width: 100%;
+height: 80%;
+}
+.cartasProductos p {
+display: none;
+}
+.cartasProductos .stock {
+display: none;
+}
+}
+@media (max-width: 480px) {
+.cartasProductos h3 {
+display: none;
+}
+.cartasProductos img{
+width: 100%;
+height: 100%;
+}
+}
+
+
+
 /*ESTILO CONTENEDOR 5 (SECCION "PROYECTOSJUEGOS")*/
 
 #contenedor5 h3{
