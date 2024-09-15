@@ -1,0 +1,40 @@
+[
+    {
+      "nombre": "Stickers Lucky!",
+      "precio": 12000,
+      "stock": 18,
+      "imagen": "imgs/smnlogo1.png"
+    },
+    {
+      "nombre": "Stickers Spell My Name",
+      "precio": 25000,
+      "stock": 8,
+      "imagen": "imgs/smnlogo1.png"
+    },
+    {
+      "nombre": "Pack Pines (L7!)",
+      "precio": 15000,
+      "stock": 16,
+      "imagen": "imgs/smnlogo1.png"
+    },
+    {
+      "nombre": "Póster Akira (L7!)",
+      "precio": 22000,
+      "stock": 6,
+      "imagen": "imgs/smnlogo1.png"
+    },
+    {
+      "nombre": "Póster Era (TWSM)",
+      "precio": 20000,
+      "stock": 3,
+      "imagen": "imgs/smnlogo1.png"
+    },
+    {
+      "nombre": "Print Heroes (TWSM)",
+      "precio": 20000,
+      "stock": 8,
+      "imagen": "imgs/smnlogo1.png"
+    }
+    
+  ]
+  
