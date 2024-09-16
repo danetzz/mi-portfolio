@@ -247,3 +247,20 @@ fetch('productos.json')
 });
 
 
+// SCRIPT DE FORMULARIO DE CONTACTO (VALIDACION DE FORMULARIO)
+
+    document.getElementById('contactForm').addEventListener('submit', function(event) {
+        const form = event.target;
+        if (form.checkValidity()) {
+            // Prevent default form submission
+            event.preventDefault();
+            
+            // Redirect to index.html
+            window.location.href = 'index.html';
+        } else {
+            alert('Por favor, complete todos los campos obligatorios.');
+        }
+    });
+
+
+
