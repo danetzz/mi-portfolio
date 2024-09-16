@@ -1,4 +1,45 @@
-// SCRIPT DE LA PAGINA LOGIN
+// SCRIPT FORMULARIO LOGIN- VALIDACION
+
+   function validarFormulario(event) {
+       // Prevenir el envío del formulario si hay errores
+       event.preventDefault();
+   
+       // Recupero los valores del formulario y los pongo en 3 constantes
+       const nombreUsuario = document.getElementById('usuario').value;
+       const contrasena = document.getElementById('contrasena').value;
+       const checkbox = document.getElementById('aceptar').checked;
+   
+       // Valido el nombre de usuario
+       if (nombreUsuario.length > 30) {
+           alert('El nombre de usuario debe tener hasta 30 caracteres.');
+           return false;
+       }
+   
+       // Valido la contraseña
+       if (contrasena.length <= 5) {
+           alert('La contraseña debe tener más de 5 caracteres.');
+           return false;
+       }
+   
+       // Valido el checkbox
+       if (!checkbox) {
+           alert('Debes aceptar los términos.');
+           return false;
+       }
+   
+   // Redirigir según el valor del usuario
+   if (nombreUsuario === 'danila') {
+                   window.location.href = 'admin.html'; // Redirige al HTML de administrador
+               } else if (nombreUsuario === 'zaiart') {
+                   window.location.href = 'https://www.youtube.com/@zaiartt'; // Redirige al HTML de creador de contenido
+               } else {
+                   window.location.href = 'index.html'; // Redirige al HTML de landing page
+               }
+   
+               return true;
+           }
+
+
 
 // DIV DE CARGA1
 document.addEventListener('DOMContentLoaded', function() {
