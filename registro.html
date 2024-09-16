@@ -3,63 +3,10 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Zaitoons- Registro</title>
-    <style>
-
-body {
-    background-color: #FFC3D2;
-    font-family: Arial, Helvetica, sans-serif;
-    color: #A97280;
-    }
-#logoInicio{
-    margin: auto;
-    width: 120px;
-    margin-top: 40px;
-}
-
-form{
-            background-color: white;
-            border-radius: 8px; 
-            padding: 20px; 
-            width: 25%; 
-            height: 400px;
-            margin: auto;
-            margin-top: 2%;
-            
-    }
-
-   
-input[type="submit"]{
-            display: inline-block;
-            padding: 10px 20px;
-            font-size: 16px;
-            text-align: center;
-            background-color: #FFC3D2;
-            color: white;
-            border: none;
-            border-radius: 5px;
-            text-decoration: none;
- 
-        }
-        input[type="submit"]:hover {
-            background-color: #A97280;
-            color: #FFF7F7;
-        }
-
-form a{
-    text-decoration: none;
-    color: #A97280;
-}
-form a:hover{
-    text-decoration: underline;
-}
-
-form #linkOlvideContra{
-    font-size: 14px;
-}
+    <link rel="stylesheet" href="styleform.css">
+    <title>Zaitoons- Registrarse</title>
 
 
-    </style>
   
 </head>
 
@@ -92,56 +39,19 @@ form #linkOlvideContra{
             <input type="checkbox" id="aceptar" name="aceptar">
             Acepto los términos y condiciones
         </label><br><br>
-
-        
+        <br>
+        <br>
         <input type="submit" value="Registrarse" required>
+        <br>
         <br>
         <p> ¿Ya tienes una cuenta? <a href="login.html" id="linkRegistro">Inicia Sesión</a></p>
     </form>
 
 
-<script>
+<script src="script.js"></script>
    
 
 
-function validarFormulario(event) {
-    // Prevenir el envío del formulario si hay errores
-    event.preventDefault();
 
-    // Recupero los valores del formulario y los pongo en 3 constantes
-    const nombreUsuario = document.getElementById('usuario').value;
-    const contrasena = document.getElementById('contrasena').value;
-    const checkbox = document.getElementById('aceptar').checked;
-
-    // Valido el nombre de usuario
-    if (nombreUsuario.length > 30) {
-        alert('El nombre de usuario debe tener hasta 30 caracteres.');
-        return false;
-    }
-
-    // Valido la contraseña
-    if (contrasena.length <= 5) {
-        alert('La contraseña debe tener más de 5 caracteres.');
-        return false;
-    }
-
-    // Valido el checkbox
-    if (!checkbox) {
-        alert('Debes aceptar los términos.');
-        return false;
-    }
-
-// Redirigir según el valor del usuario
-if (nombreUsuario === 'danila') {
-                window.location.href = 'admin.html'; // Redirige al HTML de administrador
-            } else if (nombreUsuario === 'zaiart') {
-                window.location.href = 'https://www.youtube.com/@zaiartt'; // Redirige al HTML de creador de contenido
-            } else {
-                window.location.href = 'index.html'; // Redirige al HTML de landing page
-            }
-
-            return true;
-        }
-</script>
 </body>
 </html>
