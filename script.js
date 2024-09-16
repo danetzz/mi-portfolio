@@ -336,5 +336,26 @@ document.addEventListener('DOMContentLoaded', function() {
         }
     });
 
+// SCRIPT PARA APARECER/ DESAPARECER MENU HAMBURGUESA (RESPONSIVE)
+// script.js
+
+
+document.addEventListener('DOMContentLoaded', () => {
+    // Selección de elementos
+    const menuToggle = document.getElementById('menu-toggle');
+    const mainNav = document.getElementById('main-nav');
+
+    
+
+    // Adición del evento click si ambos elementos están disponibles
+    if (menuToggle && mainNav) {
+        menuToggle.addEventListener('click', () => {
+            console.log('Menu toggle clickeado.'); // Mensaje para verificar que el clic está siendo registrado
+            mainNav.classList.toggle('active');
+            console.log('Clase "active" cambiada en main-nav.');
+            body.style.backgroundcolor= "black";
+        });
+    }
+});
 
 
