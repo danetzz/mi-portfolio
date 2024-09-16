@@ -246,6 +246,74 @@ fetch('productos.json')
     });
 });
 
+// SCRIPT DE LA PAGINA DE LOS COMICS
+// FUNCION FETCH DE JSON- PRODUCTOS- COMICS
+
+
+document.addEventListener('DOMContentLoaded', function() {
+    fetch('comics.json')
+        .then(response => {
+            if (!response.ok) {
+                throw new Error('Error al cargar el archivo JSON');
+            }
+            return response.json();
+        })
+        .then(productos => {
+            const contenedor = document.getElementById('comicsContainer');
+            productos.forEach(producto => {
+                // Verifica el stock antes de crear la card
+                if (producto.stock > 0) {
+                    // Crear la card
+                    const card = document.createElement('div');
+                    card.className = 'cartasProductos';
+    
+                    // Agregar la imagen
+                    const imagen = document.createElement('img');
+                    imagen.src = producto.imagen;
+                    imagen.alt = producto.nombre;
+                    card.appendChild(imagen);
+    
+                    // Agregar el nombre
+                    const nombre = document.createElement('h3');
+                    nombre.textContent = producto.nombre;
+                    card.appendChild(nombre);
+    
+                    // Agregar el precio
+                    const precio = document.createElement('p');
+                    precio.className = 'precio';
+                    precio.textContent = `$${producto.precio}`;
+                    card.appendChild(precio);
+    
+                    // Agregar el stock
+                    const stock = document.createElement('p');
+                    stock.className = 'stock';
+                    stock.textContent = `Stock: ${producto.stock}`;
+                    card.appendChild(stock);
+
+                    // Agregar la saga
+                    const saga = document.createElement('p');
+                    saga.className = 'saga';
+                    saga.textContent = `Saga: ` + producto.saga;
+                    card.appendChild(saga);
+    
+                    // Agregar el boton
+                    const boton = document.createElement('button');
+                    boton.className = 'boton';
+                    boton.textContent = producto.boton;
+                    card.appendChild(boton);
+    
+                    // Agregar la card al contenedor
+                    contenedor.appendChild(card);
+                }
+            });
+        })
+        .catch(error => {
+            console.error('Hubo un problema con la petición Fetch:', error);
+        });
+    });
+
+
+
 
 // SCRIPT DE FORMULARIO DE CONTACTO (VALIDACION DE FORMULARIO)
 
