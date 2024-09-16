@@ -1,0 +1,51 @@
+[
+    {
+      "nombre": "El Secreto de Nao",
+      "precio": 8000,
+      "stock": 10,
+      "saga": "Lucky7!",
+      "imagen": "imgs/portadacomic.jpg",
+      "boton": "Añadir al Carrito"
+    },
+    {
+      "nombre": "Inicios en Brujería",
+      "precio": 8000,
+      "stock": 8,
+      "saga": "Spell My Name",
+      "imagen": "imgs/portadacomic.jpg",
+      "boton": "Añadir al Carrito"
+    },
+    {
+      "nombre": "El Origen del Club",
+      "precio": 8000,
+      "stock": 7,
+      "saga": "Lucky7!",
+      "imagen": "imgs/portadacomic.jpg",
+      "boton": "Añadir al Carrito"
+    },
+    {
+      "nombre": "La Novia de Takashi",
+      "precio": 8000,
+      "stock": 4,
+      "saga": "Lucky7!",
+      "imagen": "imgs/portadacomic.jpg",
+      "boton": "Añadir al Carrito"
+    },
+    {
+      "nombre": "TWSM: Orígenes",
+      "precio": 8000,
+      "stock": 2,
+      "saga": "TWSM",
+      "imagen": "imgs/portadacomic.jpg",
+      "boton": "Añadir al Carrito"
+    },
+    {
+      "nombre": "TWSM: Piloto",
+      "precio": 8000,
+      "stock": 5,
+      "saga": "TWSM",
+      "imagen": "imgs/portadacomic.jpg",
+      "boton": "Añadir al Carrito"
+    }
+    
+  ]
