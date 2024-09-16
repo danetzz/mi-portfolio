@@ -1,22 +1,27 @@
 // SCRIPT DE LA PAGINA LOGIN
 
-// script.js
-document.addEventListener("DOMContentLoaded", function() {
-    const form = document.getElementById("loginForm");
+// DIV DE CARGA1
+document.addEventListener('DOMContentLoaded', function() {
+    const cargaDiv = document.getElementById('carga');
+    
+                // Mostrar el contenido real después de 1 segundo
+                setTimeout(function() {
+                    cargaDiv.style.display = 'none'; // Ocultar el div de carga
+                    mensajeBienvenidaDiv.style.display = 'block'; // Mostrar el mensaje de bienvenida
+                }, 1800); // 1.8 segundo
+            })
 
-    form.addEventListener("submit", function(event) {
-        const username = document.getElementById("username").value.trim();
-        const password = document.getElementById("password").value.trim();
+// DIV DE CARGA2
+document.addEventListener('DOMContentLoaded', function() {
+    const cargaDiv = document.getElementById('carga2');
+    
+                // Mostrar el contenido real después de 1 segundo
+                setTimeout(function() {
+                    cargaDiv.style.display = 'none'; // Ocultar el div de carga
+                    mensajeBienvenidaDiv.style.display = 'block'; // Mostrar el mensaje de bienvenida
+                }, 1800); // 1.8 segundo
+            })
 
-        if (username === "" || password === "") {
-            alert("Por favor, completa todos los campos.");
-            event.preventDefault(); // Evita el envío del formulario
-        }
-    /* else {
-        window.location.href = "/index.html"; // Redirige a la página de usuarios      
-    }*/
-    });
-});
 
 
 
