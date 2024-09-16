@@ -28,7 +28,8 @@ body {
 }
 
 #prenav #logopagina {
-    margin-left: 35%; /* Espacio entre los divs*/
+   width: 150px;
+   margin-left: 33%;
 }
 
 #prenav #micuenta {
