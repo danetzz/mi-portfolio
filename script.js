@@ -236,6 +236,12 @@ fetch('productos.json')
                 stock.textContent = `Stock: ${producto.stock}`;
                 card.appendChild(stock);
 
+                // Agregar el boton
+                    const boton = document.createElement('button');
+                    boton.className = 'boton';
+                    boton.textContent = producto.boton;
+                    card.appendChild(boton);
+
                 // Agregar la card al contenedor
                 contenedor.appendChild(card);
             }
