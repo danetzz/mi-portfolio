@@ -862,12 +862,6 @@ height: 100%;
 
 
 
-
-
-
-
-
-
 /*ESTILO FOOTER*/
 
 footer {
@@ -888,46 +882,17 @@ footer #redes{
 
 }
 
-/* footer #redes #instagram{
-
-    background-color: red;
-
-}
-
-footer #redes #twitter{
-
-    background-color: blue;
-
-}
-
-footer #redes #youtubee{
-
-    background-color: yellow;
-
-}
-
-footer #redes #behance{
-
-    background-color: red;
-
-} Lo activo para chequear los tamaños de los divs */
-
-
-
-footer{
-    height: 400px;
-}
 
 footer #contenido{
-   /* background-color: green;*/
-      display: flex; /* Usa Flexbox para alinear los divs en una fila */
-      color: white;
-      width: 55%;
-      gap: 22%;
-      margin-left: 30%;
+    display: flex;
+    justify-content: space-between; /* Espacio igual entre los divs */
+    align-items: stretch; /* Asegura que todos los divs tengan la misma altura */
+    gap: 10px; /* Espacio entre los divs (opcional) */
+    width: 90%; /* Ocupa el ancho completo del contenedor */
+    padding: 10px; /* Opcional: para dar espacio alrededor del contenedor */
+    margin-left: 2%;
+    color: white;
 
-    
-  
   }
 
   footer #contenido ul{
@@ -938,10 +903,18 @@ footer #contenido{
   }
 
   
+  footer #contenido #logopagina{
+    width: 200px;
+    margin-top: 50px;
+    margin-left: 10%;
+  }
+
+  
 
   footer #contenido #columnaAyuda a{
     color:white;
     text-decoration: none;
+
         
   }
 
