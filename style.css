@@ -1143,49 +1143,6 @@ footer #contenido{
     display: none;
 }
 
-@media (max-width: 1000px) {
-    #main-nav {
-        display: none;
-        flex-direction: column;
-        width: 100%;
-        background-color: #FFF7F7;
-    }
-
-    #main-nav.active {
-        display: flex;
-    }
-
-    #menu-toggle {
-        display: block;
-    }
-
-    #search-icon {
-        display: none;
-    }
-
-    nav ul {
-        display: flex;
-        flex-direction: column;
-        width: 100%;
-    }
-
-    nav ul .submenu {
-        position: static;
-        width: 100%;
-    }
-    #prenav #logopagina {
-        width: 150px;
-        margin-left: 28%;
-    }
-
-    #prenav #micuenta{
-        margin-left: 20%;
-    
-    } 
-
-   
-    
-}
 @media (max-width: 1080px) {
     #contenedor4 #cartas{
         flex-direction: column;
@@ -1230,6 +1187,51 @@ footer #contenido ul li{
 
 
 }
+
+@media (max-width: 1000px) {
+    #main-nav {
+        display: none;
+        flex-direction: column;
+        width: 100%;
+        background-color: #FFF7F7;
+    }
+
+    #main-nav.active {
+        display: flex;
+    }
+
+    #menu-toggle {
+        display: block;
+    }
+
+    #search-icon {
+        display: none;
+    }
+
+    nav ul {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+    }
+
+    nav ul .submenu {
+        position: static;
+        width: 100%;
+    }
+    #prenav #logopagina {
+        width: 150px;
+        margin-left: 28%;
+    }
+
+    #prenav #micuenta{
+        margin-left: 20%;
+    
+    } 
+
+   
+    
+}
+
 
 
 
