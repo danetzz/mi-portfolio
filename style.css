@@ -632,6 +632,25 @@ color: #2ecc71;
 font-size: 70%;
 } 
 
+.cartasProductos button {
+    background-color: #FFC3D2;
+    color: white;
+    padding: 8px;
+    padding-left: 6%;
+    padding-right: 6%;
+    margin: auto;
+    border: none;
+    font-size: 14px;
+    border-radius: 8px;
+    }
+
+    .cartasProductos button:hover {
+        background-color: #A97280;
+        color: #FFF7F7;
+      
+        }
+
+
 
 @media (max-width: 645px) {
 .cartasProductos {
