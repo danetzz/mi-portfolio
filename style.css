@@ -1173,7 +1173,65 @@ footer #contenido{
         position: static;
         width: 100%;
     }
+    #prenav #logopagina {
+        width: 150px;
+        margin-left: 28%;
+    }
+
+    #prenav #micuenta{
+        margin-left: 20%;
+    
+    } 
+
+   
+    
 }
+@media (max-width: 1080px) {
+    #contenedor4 #cartas{
+        flex-direction: column;
+        height: 1600px;
+        justify-content: center;
+}
+
+.card1{
+    margin-top: 50px;
+    margin: auto;
+    width: 450px; /* Ancho de la tarjeta */
+    height: 1000px; /* Altura de la tarjeta */
+    border-radius: 8px;
+    overflow: hidden;
+    margin-bottom: 30px;
+    
+}
+
+.card-description #botonSabermas{
+    
+    padding: 1,8%;
+    padding-left: 4%;
+    padding-right: 4%;
+    margin-left: 36%;
+}
+
+footer{
+    margin-top: 95%;
+    height: 1220px;
+}
+
+footer #contenido {
+    flex-direction: column
+}
+
+footer #contenido #logopagina, #columnaAyuda, #columnaContacto{
+    margin-top: 30px;
+  }
+footer #contenido ul li{
+    padding-bottom: 5%;
+  }
+
+
+}
+
+
 
 @media (min-width: 1001px) {
     #search-icon {
@@ -1184,6 +1242,7 @@ footer #contenido{
         display: none;
     }
 }
+
 
 
 
