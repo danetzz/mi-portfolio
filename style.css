@@ -1378,12 +1378,29 @@ footer #contenido ul li{
    
     
 }
+/*Pagina de Proyectos Comics*/
 
-@media (max-width: 800px) {
+  #contenedor7, #contenedor8, #contenedor9 {
+    height: 680px;
 
-    
+}
+#contenedor7 .row, #contenedor8 .row, #contenedor9 .row{
+   flex-direction: column;
+
 }
 
+#contenedor7 .row .col, #contenedor8 .row .col, #contenedor9 .row .col{
+   margin: auto;
+
+}
+
+#contenedor7 .row #imagenComic, #contenedor8 .row #imagenComic2, #contenedor9 .row #imagenComic3{
+   width: 400px;
+   margin-bottom: 20px;
+}
+
+   
+}
 
 @media (max-width: 800px) {
 
