@@ -1255,15 +1255,20 @@ footer #contenido{
     display: none;
 }
 
+
 @media (max-width: 1080px) {
+
+    #contenedor4 {
+        height: 2100px;
+    }
     #contenedor4 #cartas{
         flex-direction: column;
-        height: 1600px;
+        height: 1950px;
         justify-content: center;
 }
 
 .card1{
-    margin-top: 50px;
+    margin-top: 30px;
     margin: auto;
     width: 450px; /* Ancho de la tarjeta */
     height: 1000px; /* Altura de la tarjeta */
@@ -1281,9 +1286,13 @@ footer #contenido{
     margin-left: 36%;
 }
 
+.card-description{
+    height: 350px;
+}
+
 footer{
-    margin-top: 95%;
-    height: 1220px;
+    margin-top: 60px;
+    height: 860px;
 }
 
 footer #contenido {
@@ -1299,6 +1308,8 @@ footer #contenido ul li{
 
 
 }
+
+
 
 @media (max-width: 1000px) {
     #main-nav {
@@ -1339,12 +1350,82 @@ footer #contenido ul li{
         margin-left: 20%;
     
     } 
+    #contenedor3{
+        height: 1000px;
+        flex-direction: column
+    }
+
+    #contenedor3 #textos2{
+        width: 90%;
+        margin: auto;
+        margin-bottom: 50px;
+    }
+
+    #contenedor3 #textos2 h3, p {
+        width: 100%;
+
+        
+    }
+
+    #contenedor3 .carousel{
+        width: 580px;
+        height: 580px;
+        padding: 10px;
+        margin: auto;
+        
+    }
 
    
     
 }
 
+@media (max-width: 800px) {
 
+    
+}
+
+
+@media (max-width: 800px) {
+
+    #contenedor1{
+        flex-direction: column;
+        margin: auto;
+        margin-bottom: 60px;
+    }
+
+    #contenedor1 .image-container, .image-container2, .image-container3, .image-container4, .image-container5{
+        margin: auto;
+        width: 600px;
+    }
+
+    #contenedor1 img{
+        width: 100%; /* Hace que la imagen se ajuste al ancho del contenedor */
+        height: 110%; /* Hace que la imagen se ajuste a la altura del contenedor */
+        object-fit: cover;
+        object-position: center 15%;
+        
+    }
+
+    #contenedor2 {
+        flex-direction: column;
+        margin-top: 30px;
+       
+    }
+
+    #contenedor2 #titulos, #contenedor2 #textos{
+        margin: auto;
+       
+    }
+
+    #contenedor2 #textos{
+        width: 520px;
+       
+    }
+ 
+
+
+
+}
 
 
 @media (min-width: 1001px) {
@@ -1356,6 +1437,7 @@ footer #contenido ul li{
         display: none;
     }
 }
+
 
 
 
