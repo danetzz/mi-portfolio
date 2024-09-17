@@ -1117,6 +1117,53 @@ height: 100%;
     color: #FFF7F7;
 }
 
+/*ESTILO PAGINA MENSAJE RECIBIDO*/
+
+
+
+      
+       .thank-you-container {
+           background: white;
+           padding: 2%;
+           border-radius: 8px;
+           box-shadow: 0 0 10px rgba(0,0,0,0.1);
+           width: 600px;
+           text-align: center;
+           margin: auto;
+       }
+       .thank-you-container h2 {
+           margin-top: 0;
+       }
+       .thank-you-container p {
+           margin: 20px 0;
+           font-size: 18px;
+       }
+       .thank-you-container a {
+           color: #A97280;
+           text-decoration: none;
+           font-weight: bold;
+       }
+       .thank-you-container a:hover {
+           text-decoration: underline;
+       }
+   
+
+       /*ESTILO PAGINA "CARRITO"*/
+
+ 
+       .cart-message {
+   text-align: center;
+   padding: 4%;
+   background-color: #ffffff;
+   border: 1px solid #ddd;
+   border-radius: 8px;
+   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+   width: 50%;
+   margin: auto;
+   color: #A97280;
+   
+}
+
 
 
 
