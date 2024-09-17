@@ -375,8 +375,8 @@ document.addEventListener('DOMContentLoaded', function() {
             // Prevent default form submission
             event.preventDefault();
             
-            // Redirect to index.html
-            window.location.href = 'index.html';
+            // Redirect to mensajeEnviado.html
+            window.location.href = 'mensajeEnviado.html';
         } else {
             alert('Por favor, complete todos los campos obligatorios.');
         }
