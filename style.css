@@ -1080,7 +1080,7 @@ height: 100%;
 /*ESTILO FORMULARIO DE CONTACTO (SECCION "CONTACTO")*/
 
 
-#formularioContacto {
+main {
     background: white;
     padding: 20px;
     border-radius: 8px;
@@ -1090,10 +1090,10 @@ height: 100%;
     margin :auto;
     color: #A97280
 }
-#formularioContacto h2 {
+main h2 {
     margin-top: 0;
 }
-#formularioContacto input, #formularioContacto textarea {
+main input, main textarea {
     width: calc(100% - 20px);
     padding: 10px;
     margin: 10px 0;
@@ -1101,11 +1101,11 @@ height: 100%;
     border-radius: 4px;
     box-sizing: border-box;
 }
-#formularioContacto textarea {
+main textarea {
     resize: vertical;
     height: 100px;
 }
-#formularioContacto button {
+main button {
     padding: 10px 20px;
     border: none;
     border-radius: 4px;
@@ -1115,7 +1115,7 @@ height: 100%;
     cursor: pointer;
 
 }
-#formularioContacto button:hover {
+main button:hover {
     background-color: #A97280;
     color: #FFF7F7;
 }
